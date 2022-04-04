@@ -1,3 +1,26 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
 a {
   text-decoration: none;
+}
+
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header {
+  background-image: url(../images/header-bg.jpg);
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__inner {
+  display: flex;
 }
