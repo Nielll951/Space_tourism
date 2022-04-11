@@ -62,6 +62,12 @@ button {
   font-size: 18px;
   line-height: 21px;
   padding: 20px 45px;
+  transition: all .5s;
+}
+
+.button:hover {
+  border: 1px solid #CB0E0E;
+  color: #CB0E0E;
 }
 
 .header {
@@ -571,4 +577,70 @@ foreignObject {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
+}
+
+.footer {
+  background-image: url(../images/footer-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  padding: 100px 0 150px;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__text {
+  width: 165px;
+  margin-right: 50px;
+}
+
+.footer__text p + p{
+  margin-top: 50px;
+}
+.footer__menu {
+  list-style: none;
+  width: 120px;
+  margin-right: 95px;
+}
+
+.footer__menu-item, 
+.footer__links-item {
+  margin-bottom: 20px;
+}
+
+.footer__menu-link, 
+.footer__links-link {
+  text-transform: uppercase;
+  transition: color .5s;
+}
+
+.footer__menu-link:hover, 
+.footer__links-link:hover {
+  color: #CB0E0E;
+}
+
+.footer__links {
+  list-style: none;
+}
+
+.footer__links-item {
+}
+
+.footer__links-link {
+
+}
+
+@media (max-width: 1024px) {
+  .login {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 895px) {
+  .login {
+    margin-right: 0;
+  }
 }
