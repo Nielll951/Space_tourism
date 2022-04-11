@@ -507,6 +507,7 @@ foreignObject {
 
 .contacts {
   background-color: #010203;
+  padding-bottom: 100px;
 }
 
 .contacts__inner {
@@ -542,6 +543,7 @@ foreignObject {
   color: #fff;
   padding: 20px 0;
   outline: none;
+  width: 100%;
 }
 
 .contacts__form-input::placeholder {
@@ -551,14 +553,22 @@ foreignObject {
   color: #fff;
 }
 
-.button {
+.contacts__btn {
+  margin-top: 70px;
+  width: 100%;
 }
 
 .contacts__guaranteer {
+  width: 500px;
 }
 
 .contacts__guaranteer-text {
+  font-size: 24px;
+  line-height: 29px;
 }
 
 .contacts__guaranteer-img {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
 }
