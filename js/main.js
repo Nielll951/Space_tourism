@@ -7,6 +7,8 @@ $(function(){
            breakpoint: 481,
            settings: {
              arrows: false,
+             dots: true,
+             autoplay: true,
            }
          }
        ]

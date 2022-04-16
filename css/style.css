@@ -65,7 +65,8 @@ button {
   transition: all .5s;
 }
 
-.button:hover {
+.button:hover,
+.header__btn:hover {
   border: 1px solid #CB0E0E;
   color: #CB0E0E;
 }
@@ -114,7 +115,8 @@ button {
   transition: all .5s;
 }
 
-.menu__link:hover {
+.menu__link:hover,
+.phone:hover {
   color: #CB0E0E;
 }
 
@@ -122,6 +124,7 @@ button {
   font-size: 24px;
   line-height: 29px;
   margin-left: auto;
+  transition: all .5s;
 }
 
 .login {
@@ -163,6 +166,7 @@ button {
   width: 100%;
   border: 1px solid #fff;
   padding: 15px 10px 16px;
+  transition: all .5s;
 }
 
 .header__description {
@@ -368,9 +372,6 @@ foreignObject {
   color: #CB0E0E;
 }
 
-.special-offer__price {
-}
-
 .special-offer__old-price {
   font-size: 14px;
   line-height: 17px;
@@ -480,12 +481,6 @@ foreignObject {
   padding: 100px 0;
 }
 
-.slider__box {
-}
-
-.slider__box-item {
-}
-
 .slider__box-img {
   margin: 0 auto;
 }
@@ -494,6 +489,7 @@ foreignObject {
   font-family: 'spaceagecyrillic';
   font-size: 24px;
   line-height: 30px;
+  padding-bottom: 10px;
 }
 
 .slider__arrow {
@@ -535,9 +531,6 @@ foreignObject {
   margin-bottom: 80px;
 }
 
-.contacts__form {
-}
-
 .contacts__form-input {
   font-family: 'sf-pro-display';
   font-size: 14px;
@@ -564,16 +557,16 @@ foreignObject {
   width: 100%;
 }
 
-.contacts__guaranteer {
+.contacts__guarantees {
   width: 500px;
 }
 
-.contacts__guaranteer-text {
+.contacts__guarantees-text {
   font-size: 24px;
   line-height: 29px;
 }
 
-.contacts__guaranteer-img {
+.contacts__guarantees-img {
   display: flex;
   justify-content: flex-end;
   margin-left: auto;
@@ -624,13 +617,6 @@ foreignObject {
 
 .footer__links {
   list-style: none;
-}
-
-.footer__links-item {
-}
-
-.footer__links-link {
-
 }
 
 .menu__btn {
@@ -713,6 +699,22 @@ foreignObject {
 
   .special-offer__btn {
     margin-bottom: 20px;
+  }
+
+  .contacts__inner {
+    display: block;
+  }
+
+  .contacts__box {
+    width: 100%;
+  }
+
+  .contacts__guarantees {
+    width: 100%;
+  }
+
+  .contacts__guarantees-img {
+    max-width: 100%;
   }
 }
 
@@ -848,7 +850,8 @@ foreignObject {
 }
 
 @media (max-width: 720px) {
-  .services {
+  .services,
+  .info {
     padding-bottom: 50px;
   }
 
@@ -859,10 +862,6 @@ foreignObject {
   .slider__description {
     font-size: 18px;
     line-height: 24px;
-  }
-
-  .info {
-    padding-bottom: 50px;
   }
 }
 
@@ -951,6 +950,45 @@ foreignObject {
   .to-book {
     background-position: top left;
   }
+
+  .services__title {
+    font-size: 35px;
+  }
+
+  .how-to {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    text-align: center;
+    padding: 50px 0 50px
+  }
+
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__text {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .footer__text p + p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .footer__menu,
+  .footer__links {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .footer__menu {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -981,7 +1019,45 @@ foreignObject {
   .special-offer__item-box {
     padding: 20px 10px;
   }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .slick-dots li {
+    padding: 0 5px;
+  }
+
+  .slick-dots button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0;
+  }
+
+  .contacts {
+    padding-bottom: 0px;
+  }
+
+  .contacts__guarantees-text {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+
+  .special-offer__item-box {
+    min-height: 300px;
+  }
 }
+
 @media (max-width: 375px) {
   .services__btn--first::before {
     bottom: 63px;
@@ -989,6 +1065,10 @@ foreignObject {
 }
 
 @media (max-width: 360px) {
+  .header__inner {
+    min-height: 85vh;
+  }
+
   .header__top {
     flex-wrap: wrap;
   }
@@ -1004,6 +1084,7 @@ foreignObject {
   .header__btn {
     font-size: 16px;
     width: 100%;
+    transition: all .5s;
   }
 
   .phone {
@@ -1022,5 +1103,24 @@ foreignObject {
     padding-top: 120px;
   }
 
+  .to-book {
+    min-height: 85vh;
+  }
 
+  .contacts__title {
+    padding: 50px 0 30px;
+  }
+
+  .contacts__box-text {
+    margin-bottom: 50px;
+  }
+
+  .contacts__form-input {
+    margin-bottom: 20px;
+    padding: 15px 0;
+  }
+
+  .contacts__btn {
+    margin-top: 50px;
+  }
 }
